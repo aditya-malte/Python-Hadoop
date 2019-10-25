@@ -1,0 +1,12 @@
+hadoop jar /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar -input input_dir -output output_dir -mapper mapper.py
+ -file mapper.py -reducer reducer.py -file reducer.py
+
+
+To copy from local to hdfs
+hadoop fs put <source> <dest>
+
+
+state:
+input_dir	hdfs
+mapper.py	local
+reducer.py	local
