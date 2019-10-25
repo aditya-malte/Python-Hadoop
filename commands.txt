@@ -3,7 +3,7 @@ hadoop jar /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar -input 
 
 
 To copy from local to hdfs
-hadoop fs put <source> <dest>
+hadoop fs -put <source> <dest>
 
 
 state:
